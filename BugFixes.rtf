@@ -1,0 +1,523 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fmodern\fcharset0 Courier-Bold;\f4\froman\fcharset0 Times-Roman;\f5\froman\fcharset0 Times-Bold;
+\f6\fswiss\fcharset0 Helvetica-Bold;\f7\fnil\fcharset0 Monaco;\f8\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue255;\red255\green255\blue255;\red0\green0\blue0;
+\red38\green38\blue38;\red193\green193\blue193;\red24\green24\blue24;\red183\green111\blue179;\red66\green179\blue255;
+\red140\green211\blue254;\red202\green202\blue202;\red70\green137\blue204;\red212\green214\blue154;\red194\green126\blue101;
+\red140\green140\blue140;\red11\green12\blue12;\red0\green0\blue0;\red30\green128\blue240;\red64\green163\blue63;
+\red67\green192\blue160;\red0\green0\blue233;\red149\green255\blue145;\red109\green109\blue109;\red167\green197\blue152;
+\red89\green138\blue67;\red52\green52\blue52;\red226\green226\blue226;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c25279\c100000;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0\c60000;
+\cssrgb\c20000\c20000\c20000;\cssrgb\c80000\c80000\c80000;\cssrgb\c12157\c12157\c12157;\cssrgb\c77255\c52549\c75294;\cssrgb\c30980\c75686\c100000;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c83137\c83137\c83137;\cssrgb\c33725\c61176\c83922;\cssrgb\c86275\c86275\c66667;\cssrgb\c80784\c56863\c47059;
+\cssrgb\c61961\c61961\c61961;\cssrgb\c4706\c5098\c5490;\cssrgb\c0\c0\c0;\cssrgb\c12941\c58824\c95294;\cssrgb\c29804\c68627\c31373;
+\cssrgb\c30588\c78824\c69020;\cssrgb\c0\c0\c93333;\cssrgb\c63529\c98824\c63529;\cssrgb\c50196\c50196\c50196;\cssrgb\c70980\c80784\c65882;
+\cssrgb\c41569\c60000\c33333;\cssrgb\c26667\c26667\c26667;\cssrgb\c90980\c90980\c90980;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww6240\viewh15200\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+git pull origin main --rebase
+\fs24 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf4 www.linkedin.com/in/sandeep-ghorpade-6b739b2a5\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \
+\
+\
+Critical blocker major\
+P1 p2 \
+\
+\
+\
+\
+import * as React from 'react';\
+import CssBaseline from '@mui/material/CssBaseline';\
+\
+export default function MyApp() \{\
+  return (\
+    <React.Fragment>\
+      
+\fs26 <
+\f2\b CssBaseline
+\f0\b0  />
+\fs24 \
+      \{/* The rest of your application */\}\
+    </React.Fragment>\
+  );\
+\}
+\f3\b \cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0 \cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0 \cf0 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf6 \cb7  \cf8 if\cf6  (\cf9 response\cf6 ) \{\cb1 \
+\cb7       \cf8 if\cf6 (\cf9 response\cf6 .\cf10 status\cf6  \cf11 ===\cf6  \cf12 false\cf6 )\{\cb1 \
+\cb7         \cf13 alert\cf6 (\cf9 response\cf6 .\cf10 message\cf6 )\cb1 \
+\cb7         \cf13 rejectWithValue\cf6 (\cf13 translate\cf6 (\cf14 "login.alertSomethingWentWrong"\cf6 ));\cb1 \
+\cb7       \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf0 \
+\
+\
+config.navigation.ts won't hold the your navigation structure, you need to remove that\
+& ensure your 
+\f5\b config.app.json 
+\f4\b0 should look like\
+\{\
+"frameworkVersion": \cf15 "0.0.1"\cf0 ,\
+"appDependencies": \{\},\
+"appDevDependencies": \{\},\
+"navigationScreens": \{\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b \cf0 "SCREEN2": \cf15 "Screen2"
+\f4\b0 \cf0 \
+\},\
+"reduxDependencies": \{\
+"Auth": \{\
+"user": \{\
+"name": \cf15 "test"\cf0 ,\
+"email": \cf15 "test@ext.com"\cf0 ,\
+"token": \cf15 "test-user"\cf0 \
+\}\
+\}\
+\},\
+"exportElements": [\
+\{\
+"name": \cf15 "Checkout"\cf0 ,\
+"file": \cf15 "./main/Checkout.tsx"\cf0 \
+\}\
+]\
+\}\
+\
+Screen2 suppose to be the your navigation hold\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f6\b \cf0 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs26 \cf16 \expnd0\expndtw0\kerning0
+/^[a-zA-Z ]*$/
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf6 \cb7 .\cf13 test\cf6 (\cf9 userName\cf6 )\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f6\b \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+userId: 55\
+Email: sandeep@gmail.com\
+Pass: Abc@12345\
+Role 1\
+\
+useId: 145\
+\pard\pardeftab720\partightenfactor0
+
+\f7\b0 \cf17 \cb3 \expnd0\expndtw0\kerning0
+sandeep1@gmail.com\
+Pass: Abc@12345\
+Role: 1\
+addressId 101\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf18 \cb1 const\cf0  \{ goTo, \cf18 state\cf0  \}:\{ goTo: (to: \cf19 string\cf0 , params?: \cf19 any\cf0 ) \cf18 =>\cf0  \cf19 void\cf0 ; state: \cf19 any\cf0  \} = useFrameworks();\
+\cf18 const\cf0  \cf18 categoryId\cf0  = \cf18 state\cf0 ?.categoryId;\
+\cf18 const\cf0  \cf18 subcategoryId\cf0  = \cf18 state\cf0 ?.subcategoryId\
+\cf18 const\cf0  \cf18 productName\cf0  = \cf18 state\cf0 ?.productName\
+\cf18 const\cf0  \cf18 categoryName\cf0  = \cf18 state\cf0 ?.categoryName\
+\cf18 const\cf0  \cf18 subcategoryName\cf0  = \cf18 state\cf0 ?.subcategoryName
+\f7 \cf17 \cb3 \
+\
+[1]\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf17 import 
+\f2\b Auth
+\f0\b0  from "@ext/utilities/Auth.slice"
+\f7 \
+
+\f0 export const store = configureStore(\{\
+  reducer: \{\
+    Category,\
+    ...dependenciesReducer,\
+    
+\f2\b Auth
+\f0\b0 ,\
+\
+  \},\
+  middleware: (getDefaultMiddleware) =>\
+    getDefaultMiddleware(\{\
+      serializableCheck: false,\
+    \}),\
+\});
+\f7 \
+[2]\
+yarn add @react-native-async-storage/async-storage@1.19.3\
+rm -rf yarn.lock node_modules\
+yarn\
+yarn android\
+[3]\
+If \
+
+\f0 import Auth from "\ul @ext/utilities/Auth.slice\ulnone ";  <\'97 TS Errors 
+\f7 \
+Then remove #stg\
+
+\f0 "@ext": "https://bitbucket.org/extwebtech/ext-framework-minified.git
+\f2\b #stg
+\f0\b0 ",\
+"@ext-packages": "https://bitbucket.org/extwebtech/ext-packages.git
+\f2\b #stg
+\f0\b0 ",\cf6 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7 \cf17 \cb3 rm -rf yarn.lock node_modules\
+yarn\
+\
+Async Storage Added and Auth reducer passed to store\
+Git commit\
+Git pull\
+Git merge main\
+Git add .\
+Git commit \
+PR\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf17 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf3 \cb5 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f6 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf6 \cb7 \expnd0\expndtw0\kerning0
+ \cf12 const\cf6  \{ \cf9 Auth\cf6  \}\cf11 :\cf20 any\cf6  \cf11 =\cf6  \cf13 getState\cf6 ();\cb1 \
+\cb7     \cf12 const\cf6  \cf9 token\cf6  \cf11 =\cf6  \cf9 Auth\cf6 .\cf10 user\cf6 .\cf10 token\cf6 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f6\b \cf0 \kerning1\expnd0\expndtw0 \
+\
+Auth token fetched from state and provided\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0 \cf13 \cb7 \expnd0\expndtw0\kerning0
+middleware\cf10 :\cf6  (\cf13 getDefaultMiddleware\cf6 ) \cf12 =>\cf6 \cb1 \
+\cb7     \cf13 getDefaultMiddleware\cf6 (\{\cb1 \
+\cb7       \cf10 serializableCheck:\cf6  \cf12 false\cf6 ,\cb1 \
+\cb7     \}),\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f6\b \cf0 \kerning1\expnd0\expndtw0 \
+\
+Bit bucket pwd: \
+ATBB6tKbeh7GDdjwKL5HkZUg2Lhc02492F4A\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0 \cf21 \expnd0\expndtw0\kerning0
+\ul \ulc21 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \ulnone 1 customer\
+2 seller\
+3 admin\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs28 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 Empty Item \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf3 \cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\f7\b0 \cf22 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf12 \cb7 const\cf6  \cf13 EmptyListComp\cf6  \cf11 =\cf6  () \cf12 =>\cf6  (\cb1 \
+\cb7   \cf23 <\cf20 Text\cf6  \cf10 style\cf11 =\cf12 \{\cf9 styles\cf11 .\cf10 emptyItem\cf12 \}\cf23 >\cf12 \{\cf13 translate\cf11 (\cf14 "category.textListIsEmpty"\cf11 )\cf12 \}\cf23 </\cf20 Text\cf23 >\cf6 \cb1 \
+\cb7 );\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7 \cf22 \cb5 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf6 \cb7  \cf10 emptyItem:\cf6 \{\cb1 \
+\cb7     \cf10 fontSize:\cf6  \cf24 16\cf6 ,\cb1 \
+\cb7     \cf10 color:\cf6  \cf9 configTheme\cf6 .\cf10 black\cf6 ,\cb1 \
+\cb7     \cf10 fontWeight:\cf6  \cf14 '700'\cf6 ,\cb1 \
+\cb7     \cf10 alignSelf:\cf6  \cf14 'center'\cf6 ,\cb1 \
+\cb7     \cf10 margin:\cf6  \cf13 height\cf6 (\cf24 4\cf6 )\cb1 \
+\cb7   \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f7 \cf22 \cb5 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\b\fs30 \cf0 \cb1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97 Search Container \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f7\b0 \cf22 \cb5 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf22 \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf6 \cb7  \cf12 \{\cf25 /* <View style=\{styles.searchContainer\}>\cf6 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb7             <View style=\{styles.searchInputContainer\}>\cf6 \cb1 \
+\cf25 \cb7               <AntDesign name="search1" size=\{20\} color=\{configTheme.black\} />\cf6 \cb1 \
+\cf25 \cb7               <TextInput\cf6 \cb1 \
+\cf25 \cb7                 style=\{styles.searchText\}\cf6 \cb1 \
+\cf25 \cb7                 placeholder=\{translate("checkout.plrFeildSearch")\}\cf6 \cb1 \
+\cf25 \cb7               />\cf6 \cb1 \
+\cf25 \cb7             </View>\cf6 \cb1 \
+\cf25 \cb7             <View style=\{styles.notificationIconContainer\}>\cf6 \cb1 \
+\cf25 \cb7               <Ionicons name="notifications-outline" size=\{24\} />\cf6 \cb1 \
+\cf25 \cb7             </View>\cf6 \cb1 \
+\cf25 \cb7           </View> */\cf12 \}\cf6 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b \cf3 \cb5 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs30 \cf0 \cb1 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97Moment \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b0\fs24 \cf8 \cb7 export\cf6  \cf12 const\cf6  \cf13 momentFormat\cf6  \cf11 =\cf6  (\cf10 date\cf11 :\cf6  \cf20 string\cf6  \cf11 |\cf6  \cf20 Date\cf6 ) \cf12 =>\cf6  \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7   \cf12 const\cf6  \cf9 now\cf6  \cf11 =\cf6  \cf13 moment\cf6 ();\cb1 \
+\cb7   \cf12 const\cf6  \cf9 commentTime\cf6  \cf11 =\cf6  \cf13 moment\cf6 (\cf10 date\cf6 );\cb1 \
+\cb7   \cf12 const\cf6  \cf9 diffMinutes\cf6  \cf11 =\cf6  \cf9 now\cf6 .\cf13 diff\cf6 (\cf9 commentTime\cf6 , \cf14 'minutes'\cf6 );\cb1 \
+\cb7   \cf8 if\cf6  (\cf9 diffMinutes\cf6  \cf11 <\cf6  \cf24 1\cf6 ) \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 'few minutes ago'\cf6 ;\cb1 \
+\cb7   \} \cf8 else\cf6  \cf8 if\cf6  (\cf9 diffMinutes\cf6  \cf11 <\cf6  \cf24 60\cf6 ) \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 `\cf12 $\{\cf9 diffMinutes\cf12 \}\cf14  minutes ago`\cf6 ;\cb1 \
+\cb7   \} \cf8 else\cf6  \cf8 if\cf6  (\cf9 now\cf6 .\cf13 diff\cf6 (\cf9 commentTime\cf6 , \cf14 'days'\cf6 ) \cf11 <\cf6  \cf24 2\cf6 ) \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 `\cf12 $\{\cf10 Math\cf11 .\cf13 floor\cf11 (\cf9 diffMinutes\cf11  / \cf24 60\cf11 )\cf12 \}\cf14  hours ago`\cf6 ;\cb1 \
+\cb7   \} \cf8 else\cf6  \cf8 if\cf6  (\cf9 now\cf6 .\cf13 diff\cf6 (\cf9 commentTime\cf6 , \cf14 'weeks'\cf6 ) \cf11 <\cf6  \cf24 4\cf6 ) \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 `\cf12 $\{\cf10 Math\cf11 .\cf13 floor\cf11 (\cf9 now\cf11 .\cf13 diff\cf11 (\cf9 commentTime\cf11 , \cf14 'days'\cf11 ))\cf12 \}\cf14  days ago`\cf6 ;\cb1 \
+\cb7   \} \cf8 else\cf6  \cf8 if\cf6  (\cf9 now\cf6 .\cf13 diff\cf6 (\cf9 commentTime\cf6 , \cf14 'months'\cf6 ) \cf11 <\cf6  \cf24 12\cf6 ) \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 `\cf12 $\{\cf10 Math\cf11 .\cf13 floor\cf11 (\cf9 now\cf11 .\cf13 diff\cf11 (\cf9 commentTime\cf11 , \cf14 'weeks'\cf11 ))\cf12 \}\cf14  weeks ago`\cf6 ;\cb1 \
+\cb7   \} \cf8 else\cf6  \{\cb1 \
+\cb7     \cf8 return\cf6  \cf14 `\cf12 $\{\cf10 Math\cf11 .\cf13 floor\cf11 (\cf9 now\cf11 .\cf13 diff\cf11 (\cf9 commentTime\cf11 , \cf14 'months'\cf11 ))\cf12 \}\cf14  months ago`\cf6 ;\cb1 \
+\cb7   \}\cb1 \
+\cb7 \};\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf21 \ul \
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf8 \cb7 \ulnone export\cf6  \cf12 const\cf6  \cf13 formateDateforBookings\cf6  \cf11 =\cf6  (\cf10 date\cf11 :\cf6  \cf20 string\cf6  \cf11 |\cf6  \cf20 Date\cf6 ) \cf12 =>\cf6  \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7   \cf25 // return moment(date).format('llll');\cf6 \cb1 \
+\cb7   \cf8 return\cf6  \cf13 moment\cf6 (\cf10 date\cf6 ).\cf13 format\cf6 (\cf14 'YYYY-MM-DD'\cf6 );\cb1 \
+\cb7 \};\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf8 \cb7 export\cf6  \cf12 const\cf6  \cf13 formateDateforBookingsToShow\cf6  \cf11 =\cf6  (\cf10 date\cf11 :\cf6  \cf20 string\cf6  \cf11 |\cf6  \cf20 Date\cf6 ) \cf12 =>\cf6  \{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb7   \cf8 return\cf6  \cf13 moment\cf6 (\cf10 date\cf6 ).\cf13 format\cf6 (\cf14 'llll'\cf6 );\cb1 \
+\cb7 \};\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\cf21 \ul \
+\
+\cf0 \ulnone \
+PERMISSION and LOCATION \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf12 \cb7 const\cf6  [\cf9 locationPermissionStatus\cf6 , \cf9 setLocationPermissionStatus\cf6 ] \cf11 =\cf6 \cb1 \
+\cb7     \cf13 useState\cf6 <\cf20 PermissionStatus\cf6 >();\cb1 \
+\cb7   \cf12 const\cf6  [\cf9 pickedLocation\cf6 , \cf9 setPickedLocation\cf6 ] \cf11 =\cf6  \cf13 useState\cf6 <\cf20 any\cf6 >();\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f8\fs30\fsmilli15120 \cf26 \cb27 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf6 \cb7  \cf13 useEffect\cf6 (() \cf12 =>\cf6  \{\cb1 \
+\cb7     \cf12 const\cf6  \cf13 cb\cf6  \cf11 =\cf6  \cf12 async\cf6  () \cf12 =>\cf6  \{\cb1 \
+\cb7       \cf12 const\cf6  \cf9 result\cf6  \cf11 =\cf6  \cf8 await\cf6  \cf13 check\cf6 (\cf9 PERMISSIONS\cf6 .\cf9 ANDROID\cf6 .\cf9 ACCESS_FINE_LOCATION\cf6 );\cb1 \
+\cb7       \cf13 setLocationPermissionStatus\cf6 (\cf10 result\cf6 );\cb1 \
+\cb7     \};\cb1 \
+\cb7     \cf13 cb\cf6 ();\cb1 \
+\
+\cb7   \}, []);\cb1 \
+\
+\cb7   \cf13 useEffect\cf6 (() \cf12 =>\cf6  \{\cb1 \
+\cb7     \cf25 // getLocationHandler();\cf6 \cb1 \
+\cb7     \cf13 setPickedLocation\cf6 (\{\cb1 \
+\cb7       \cf10 latitude:\cf6  \cf24 17.47841686498013\cf6 ,\cb1 \
+\cb7       \cf10 longitude:\cf6  \cf24 78.36776107549667\cf6 ,\cb1 \
+\cb7     \});\cb1 \
+\cb7   \}, [\cf10 locationPermissionStatus\cf6 ]);\
+\
+ \cf12 const\cf6  \cf13 getLocationHandler\cf6  \cf11 =\cf6  \cf12 async\cf6  () \cf12 =>\cf6  \{\cb1 \
+\cb7     \cf12 const\cf6  \cf9 hasPermission\cf6  \cf11 =\cf6  \cf8 await\cf6  \cf13 verifyPermission\cf6 ();\cb1 \
+\
+\cb7     \cf8 if\cf6  (\cf11 !\cf9 hasPermission\cf6 ) \{\cb1 \
+\cb7       \cf8 return\cf6 ;\cb1 \
+\cb7     \}\cb1 \
+\
+\cb7     \cf10 console\cf6 .\cf13 log\cf6 (\cf14 "Getting current location..."\cf6 );\cb1 \
+\cb7     \cf20 Geolocation\cf6 .\cf13 getCurrentPosition\cf6 (\cb1 \
+\cb7       (\cf10 position\cf6 ) \cf12 =>\cf6  \{\cb1 \
+\cb7         \cf10 console\cf6 .\cf13 log\cf6 (\cf14 "CURRENT POSITION"\cf6 , \cf10 position\cf6 );\cb1 \
+\cb7         \cf13 setPickedLocation\cf6 (\{\cb1 \
+\cb7           \cf10 latitude:\cf6  \cf10 position\cf6 .\cf10 coords\cf6 .\cf10 latitude\cf6 ,\cb1 \
+\cb7           \cf10 longitude:\cf6  \cf10 position\cf6 .\cf10 coords\cf6 .\cf10 longitude\cf6 ,\cb1 \
+\cb7         \});\cb1 \
+\cb7       \},\cb1 \
+\cb7       (\cf10 error\cf6 ) \cf12 =>\cf6  \{\cb1 \
+\cb7         \cf20 Alert\cf6 .\cf13 alert\cf6 (\cf10 error\cf6 .\cf10 message\cf6 );\cb1 \
+\cb7       \}\cb1 \
+\cb7     );\cb1 \
+\cb7   \};\cb1 \
+\
+\
+\cb7   \cf10 goldenColor:\cf6  \cf14 "#FFAC33"\cf6 ,\
+\
+\
+\cf23 <\cf20 CardMedia\cf6 \cb1 \
+\cb7           \cf10 component\cf11 =\cf14 "img"\cf6 \cb1 \
+\cb7           \cf10 height\cf11 =\cf14 "194"\cf6 \cb1 \
+\cb7           \cf10 image\cf11 =\cf12 \{\cf10 item\cf11 .\cf10 imageUrl\cf11  ?? \cf9 falbackImage\cf12 \}\cf6 \cb1 \
+\cb7           \cf10 alt\cf11 =\cf14 "Paella dish"\cf6 \cb1 \
+\cb7           \cf10 sx\cf11 =\cf12 \{\cf9 styles\cf11 .\cf10 cardItemImage\cf12 \}\cf6 \cb1 \
+\cb7         \cf23 />\cf6 \cb1 \
+\
+\
+\
+======== MARKERS ===== Red marker and. Top of Infowindow but give lat - some\
+\cf12 \cb7 \{\cf25 /* <AdvancedMarker\cf6 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb7                   //  ref=\{markerRef\}\cf6 \cb1 \
+\cf25 \cb7                   position=\{\{\cf6 \cb1 \
+\cf25 \cb7                     lat: shop.location.latitude,\cf6 \cb1 \
+\cf25 \cb7                     lng: shop.location.longitude,\cf6 \cb1 \
+\cf25 \cb7                   \}\}\cf6 \cb1 \
+\cf25 \cb7                   title=\{\cf6 \cb1 \
+\cf25 \cb7                     "AdvancedMarker that opens an Infowindow when clicked."\cf6 \cb1 \
+\cf25 \cb7                   \}\cf6 \cb1 \
+\cf25 \cb7                   onClick=\{() => setInfowindowOpen(true)\}\cf6 \cb1 \
+\cf25 \cb7                 />\cf6 \cb1 \
+\
+\cf25 \cb7                 \{shop.id === selectedItem.id && (\cf6 \cb1 \
+\cf25 \cb7                   <InfoWindow\cf6 \cb1 \
+\cf25 \cb7                     position=\{\{\cf6 \cb1 \
+\cf25 \cb7                       lat: shop.location.latitude + 1.5,\cf6 \cb1 \
+\cf25 \cb7                       lng: shop.location.longitude,\cf6 \cb1 \
+\cf25 \cb7                     \}\}\cf6 \cb1 \
+\cf25 \cb7                     // anchor=\{marker\}\cf6 \cb1 \
+\cf25 \cb7                     maxWidth=\{200\}\cf6 \cb1 \
+\cf25 \cb7                     onCloseClick=\{() => \{\}\}\cf6 \cb1 \
+\cf25 \cb7                   >\cf6 \cb1 \
+\cf25 \cb7                     \{shop.title\}\cf6 \cb1 \
+\cf25 \cb7                   </InfoWindow>\cf6 \cb1 \
+\cf25 \cb7                 )\} */\cf12 \}\cf6 \cb1 \
+\
+====== Markers 2 - Custom. Box rotate 45deg but InfoWindow do not enters\
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb7  \cf12 \{\cf25 /* <AdvancedMarker\cf6 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb7                   // ref=\{markerRef\}\cf6 \cb1 \
+\cf25 \cb7                   position=\{\{\cf6 \cb1 \
+\cf25 \cb7                     lat: shop.location.latitude,\cf6 \cb1 \
+\cf25 \cb7                     lng: shop.location.longitude,\cf6 \cb1 \
+\cf25 \cb7                   \}\}\cf6 \cb1 \
+\cf25 \cb7                   title=\{"AdvancedMarker with custom html content."\}\cf6 \cb1 \
+\cf25 \cb7                   \cf6 \cb1 \
+\cf25 \cb7                 >\cf6 \cb1 \
+\cf25 \cb7                   \{shop.id === selectedItem.id && (\cf6 \cb1 \
+\cf25 \cb7                     <Box\cf6 \cb1 \
+\cf25 \cb7                       style=\{\{\cf6 \cb1 \
+\cf25 \cb7                         position: "absolute",\cf6 \cb1 \
+\cf25 \cb7                         left: `-$\{(shop.title.length/6)-0.45\}rem`,\cf6 \cb1 \
+\cf25 \cb7                         // left: 0,\cf6 \cb1 \
+\cf25 \cb7                         top: "-1.75rem",\cf6 \cb1 \
+\cf25 \cb7                         // top: 0,\cf6 \cb1 \
+\
+\cf25 \cb7                         display: "flex",\cf6 \cb1 \
+\cf25 \cb7                         alignItems: "center",\cf6 \cb1 \
+\cf25 \cb7                         justifyContent: "center",\cf6 \cb1 \
+\cf25 \cb7                       \}\}\cf6 \cb1 \
+\cf25 \cb7                     >\cf6 \cb1 \
+\cf25 \cb7                       <Typography\cf6 \cb1 \
+\cf25 \cb7                         variant="subtitle1"\cf6 \cb1 \
+\cf25 \cb7                         noWrap=\{true\}\cf6 \cb1 \
+\cf25 \cb7                         style=\{\{\cf6 \cb1 \
+\cf25 \cb7                           background: configTheme.secondry,\cf6 \cb1 \
+\cf25 \cb7                           borderRadius: 8,\cf6 \cb1 \
+\cf25 \cb7                           fontSize: "11px",\cf6 \cb1 \
+\cf25 \cb7                           fontWeight: "500",\cf6 \cb1 \
+\cf25 \cb7                           textAlign: "center",\cf6 \cb1 \
+\cf25 \cb7                           padding: "0.25rem 1rem",\cf6 \cb1 \
+\cf25 \cb7                           color: configTheme.white,\cf6 \cb1 \
+\cf25 \cb7                         \}\}\cf6 \cb1 \
+\cf25 \cb7                       >\cf6 \cb1 \
+\cf25 \cb7                         \{shop.title\}\cf6 \cb1 \
+\cf25 \cb7                       </Typography>\cf6 \cb1 \
+\cf25 \cb7                       <Box\cf6 \cb1 \
+\cf25 \cb7                         style=\{\{\cf6 \cb1 \
+\cf25 \cb7                           width: "1rem",\cf6 \cb1 \
+\cf25 \cb7                           height: "1rem",\cf6 \cb1 \
+\cf25 \cb7                           backgroundColor: configTheme.secondry,\cf6 \cb1 \
+\cf25 \cb7                           position: "absolute",\cf6 \cb1 \
+\cf25 \cb7                           bottom: "-4px",\cf6 \cb1 \
+\cf25 \cb7                           transform: "rotate(45deg)",\cf6 \cb1 \
+\
+\cf25 \cb7                           // transform: [\cf6 \cb1 \
+\cf25 \cb7                           //   \{ rotate: "45deg" \},\cf6 \cb1 \
+\cf25 \cb7                           //   \{ translateY: -6 \},\cf6 \cb1 \
+\cf25 \cb7                           //   \{ translateX: -6 \},\cf6 \cb1 \
+\cf25 \cb7                           // ],\cf6 \cb1 \
+\cf25 \cb7                           alignSelf: "center",\cf6 \cb1 \
+\cf25 \cb7                           zIndex: -1,\cf6 \cb1 \
+\cf25 \cb7                         \}\}\cf6 \cb1 \
+\cf25 \cb7                       ></Box>\cf6 \cb1 \
+\cf25 \cb7                     </Box>\cf6 \cb1 \
+\cf25 \cb7                   )\}\cf6 \cb1 \
+\cf25 \cb7                   <img src=\{markerImage\} />\cf6 \cb1 \
+\cf25 \cb7                 </AdvancedMarker> */\cf12 \}\cf6 \cb1 \
+\
+\
+\
+\
+\
+}
